@@ -1,2 +1,1 @@
-#0x03-debugging
-I'm learning debugging 
+0x03. C - Debugging
