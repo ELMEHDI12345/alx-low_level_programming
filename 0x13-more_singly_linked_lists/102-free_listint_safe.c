@@ -2,9 +2,9 @@
 
 /**
  * free_listp2 - frees a linked list
- * @head: head of a list.
+ * @head: head of a list
  *
- * Return: no return.
+ * Return: no return
  */
 void free_listp2(listint_t **head)
 {
@@ -13,7 +13,7 @@ void free_listp2(listint_t **head)
 
 	if (head != NULL)
 	{
-		curr = *head;:
+		curr = *head ; :
 		while ((temp = curr) != NULL)
 		{
 			curr = curr->next;
@@ -24,10 +24,10 @@ void free_listp2(listint_t **head)
 }
 
 /**
- * free_listint_safe - frees a linked list.
- * @h: head of a list.
+ * free_listint_safe - frees a linked list
+ * @h: head of a list
  *
- * Return: size of the list that was freed.
+ * Return: size of the list that was freed
  */
 size_t free_listint_safe(listint_t **h)
 {
@@ -52,7 +52,7 @@ size_t free_listint_safe(listint_t **h)
 		while (add->next != NULL)
 		{
 			add = add->next;
-			if (*h == add->p)
+			if (*h == add)
 			{
 				*h = NULL;
 				free_listp2(&hptr);
